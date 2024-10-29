@@ -1,0 +1,21 @@
+Struktura Menu:
+
+1. Zarządzanie użytkownikami:
+   [1] Dodaj użytkownika
+   [2] Usuń/Zdezaktywuj użytkownika
+   [3] Wyświetl skróconą listę użytkowników
+   [4] Wyświetl infomracje szczegółowe
+
+2. Zarządzanie książkami:
+   [5] Dodaj książkę
+   [6] Usuń/Zdezaktywuj książkę
+   [7] Wyświetl listę książek
+
+3. Wypożyczenia:
+   [8] Wypożycz książkę użytkownikowi
+   [9] Zwróć książkę
+   [10] Wyświetl listę wypożyczeń
+   [11] Sprawdź zaległości
+
+4. Zakończ:
+   [0] Wyjdź z programu

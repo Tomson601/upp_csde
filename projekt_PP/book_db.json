@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "title": "Python Programming",
+        "realse_year": 2019,
+        "pages": 450
+    },
+    {
+        "id": "2",
+        "title": "Data Science Basics",
+        "realse_year": 2020,
+        "pages": 320
+    },
+    {
+        "id": "3",
+        "title": "Machine Learning Guide",
+        "realse_year": 2018,
+        "pages": 390
+    },
+    {
+        "id": "4",
+        "title": "Deep Learning Applications",
+        "realse_year": 2021,
+        "pages": 480
+    },
+    {
+        "id": "5",
+        "title": "Artificial Intelligence",
+        "realse_year": 2017,
+        "pages": 550
+    },
+    {
+        "id": "6",
+        "title": "Neural Networks Explained",
+        "realse_year": 2020,
+        "pages": 300
+    },
+    {
+        "id": "7",
+        "title": "Big Data Revolution",
+        "realse_year": 2019,
+        "pages": 400
+    },
+    {
+        "id": "8",
+        "title": "Cloud Computing Concepts",
+        "realse_year": 2021,
+        "pages": 350
+    }
+]
