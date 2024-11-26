@@ -1,0 +1,79 @@
+[
+    {
+        "uid": "1",
+        "name": "Anna",
+        "surname": "Kowalska",
+        "email": "akowal@gmail.com",
+        "is_active": true,
+        "lend_books": [
+            {
+                "id": "1"
+            },
+            {
+                "id": "2"
+            },
+            {
+                "id": "3"
+            },
+            {
+                "id": "4"
+            }
+        ]
+    },
+    {
+        "uid": "2",
+        "name": "Piotr",
+        "surname": "Nowak",
+        "email": "piotr.nowak@o2.pl",
+        "is_active": false,
+        "lend_books": [
+            {
+                "id": "5"
+            },
+            {
+                "id": "6"
+            },
+            {
+                "id": "7"
+            },
+            {
+                "id": "8"
+            }
+        ]
+    },
+    {
+        "uid": "3",
+        "name": "Micha\u0142",
+        "surname": "Cena",
+        "email": "whenpriceistoolow@mailo.pl",
+        "is_active": true,
+        "lend_books": [
+            {
+                "id": "1"
+            },
+            {
+                "id": "6"
+            }
+        ]
+    },
+    {
+        "uid": "4",
+        "name": "Danilo",
+        "surname": "Szewcziuk",
+        "email": "daniloo@gmail.com",
+        "is_active": true,
+        "lend_books": [
+            {
+                "id": "1"
+            }
+        ]
+    },
+    {
+        "uid": "5",
+        "name": "Pawe\u0142",
+        "surname": "Terminator",
+        "email": "piro@up.pl",
+        "is_active": true,
+        "lend_books": []
+    }
+]

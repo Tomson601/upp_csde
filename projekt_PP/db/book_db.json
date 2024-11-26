@@ -3,48 +3,56 @@
         "id": "1",
         "title": "Python Programming",
         "realse_year": 2019,
-        "pages": 450
+        "pages": 450,
+        "author": "John Doe"
     },
     {
         "id": "2",
         "title": "Data Science Basics",
         "realse_year": 2020,
-        "pages": 320
+        "pages": 320,
+        "author": "Jane Doe"
     },
     {
         "id": "3",
         "title": "Machine Learning Guide",
         "realse_year": 2018,
-        "pages": 390
+        "pages": 390,
+        "author": "Machinist"
     },
     {
         "id": "4",
         "title": "Deep Learning Applications",
         "realse_year": 2021,
-        "pages": 480
+        "pages": 480,
+        "author": "Linkin Park"
     },
     {
         "id": "5",
         "title": "Artificial Intelligence",
         "realse_year": 2017,
-        "pages": 550
+        "pages": 550,
+        "author": "Metallica"
     },
     {
         "id": "6",
         "title": "Neural Networks Explained",
         "realse_year": 2020,
-        "pages": 300
+        "pages": 300,
+        "author": "AC/DC"
     },
     {
         "id": "7",
         "title": "Big Data Revolution",
         "realse_year": 2019,
-        "pages": 400
+        "pages": 400,
+        "author": "The Doors"
     },
     {
         "id": "8",
         "title": "Cloud Computing Concepts",
         "realse_year": 2021,
-        "pages": 350
+        "pages": 350,
+        "author": "TOOL"
     }
 ]

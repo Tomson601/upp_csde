@@ -1,11 +1,14 @@
-import json
-from tools import handle_user, manage_db
+from func import handle_user
 
 
 def __main__():
-    handle_user.print_menu()
-    return "Success"
+    while True:
+        handle_user.print_menu()
+        choice = input("Podaj swój wybór: ")
 
+        handle_user.handle_user_choice(choice)
 
-if __name__ == __main__():
+        input("Nacisnij ENTER aby kontyunuować...")
+
+if __name__ == "__main__":
     __main__()

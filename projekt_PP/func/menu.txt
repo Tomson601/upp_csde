@@ -2,13 +2,13 @@ Struktura Menu:
 
 1. Zarządzanie użytkownikami:
    [1] Dodaj użytkownika
-   [2] Usuń/Zdezaktywuj użytkownika
-   [3] Wyświetl skróconą listę użytkowników
-   [4] Wyświetl infomracje szczegółowe
+   [2] Zdezaktywuj użytkownika
+   [3] Wyświetl listę aktywnych użytkowników
+   [4] Wyświetl informacje o użytkowniku
 
 2. Zarządzanie książkami:
    [5] Dodaj książkę
-   [6] Usuń/Zdezaktywuj książkę
+   [6] Zdezaktywuj książkę
    [7] Wyświetl listę książek
 
 3. Wypożyczenia:
