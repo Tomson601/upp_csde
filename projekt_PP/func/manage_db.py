@@ -104,12 +104,15 @@ def get_book(file_path, book_id):
 
     for book in data:
         if book['id'] == book_id:
-            print(f"ID: {book['id']}")
-            print(f"Tytuł: {book['title']}")
-            print(f"Rok wydania: {book['realse_year']}")
-            print(f"Ilość stron: {book['pages']}")
-            print("-" * 30)
-            return None
+            book_id = book['id']
+            book_title = book['title']
+            book_author = book['author']
+            book_year = book['realse_year']
+            book_pages = book['pages']
+            
+            return book_id, book_title, book_author, book_year, book_pages
+
+    return None, None, None, None, None
 
 def all_books(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -124,5 +127,83 @@ def all_books(file_path):
 
     return None
 
+def deactivate_book(book_id, db_path):
+    with open(db_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    for book in data:
+        if book['id'] == book_id:
+            book['is_active'] = False
+            break
+
+    with open(db_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=4)
+
+    print(f"Książka {book['title']} została dezaktywowana.")
+
+    return None
+
+###############################################################################
+# Lend books section
+def lend_book(user_id, book_id, db_path, book_db_path):
+    with open(db_path, 'r', encoding='utf-8') as db_file:
+        data = json.load(db_file)
+
+    for user in data:
+        if user['uid'] == user_id:
+            username = user['name']
+            user['lend_books'].append(book_id)
+            break
+        else:
+            print("Nie ma takiego użytkownika w bazie danych.")
+            return None
+
+    with open(db_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=4)
+    
+    with open(book_db_path, 'r', encoding='utf-8') as book_file:
+        book_data = json.load(book_file)
+    
+    book_id, book_title, book_author, book_year, book_pages = get_book(book_db_path, book_id)
+
+    if book_id == None:
+        print("Nie ma takiej książki w bazie danych.")
+        return None
+
+    print(f"Użytkownik {username} wypożyczył książkę: {book_title}")
+
+    return None
+
+def return_book(user_id, book_id, db_path, book_db_path):
+    with open(db_path, 'r', encoding='utf-8') as db_file:
+        data = json.load(db_file)
+
+    for user in data:
+        if user['uid'] == user_id:
+            username = user['name']
+            user['lend_books'].remove(book_id)
+            break
+        else:
+            print("Nie ma takiego użytkownika w bazie danych.")
+            return None
+
+    with open(db_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=4)
+    
+    with open(book_db_path, 'r', encoding='utf-8') as book_file:
+        book_data = json.load(book_file)
+    
+    book_id, book_title, book_author, book_year, book_pages = get_book(book_db_path, book_id)
+
+    if book_id == None:
+        print("Nie ma takiej książki w bazie danych.")
+        return None
+
+    print(f"Użytkownik {username} zwrócił książkę: {book_title}")
+
+    return None
+
+###############################################################################
+# System section
 def exit():
     quit()

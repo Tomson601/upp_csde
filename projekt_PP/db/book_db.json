@@ -4,7 +4,8 @@
         "title": "Python Programming",
         "realse_year": 2019,
         "pages": 450,
-        "author": "John Doe"
+        "author": "John Doe",
+        "is_active": false
     },
     {
         "id": "2",
@@ -54,5 +55,12 @@
         "realse_year": 2021,
         "pages": 350,
         "author": "TOOL"
+    },
+    {
+        "id": 9,
+        "title": "Moreloniccon",
+        "author": "Lucek",
+        "realse_year": "2004",
+        "pages": "321"
     }
 ]

@@ -53,8 +53,20 @@ def handle_user_choice(choice):
     elif choice == "7":
         print("----------KSIĄŻKI---------")
         manage_db.all_books(BOOK_DB)
+    
+    elif choice == "8":
+        print("----------WYPOŻYCZENIE KSIĄŻKI----------")
+        id = input("Podaj id książki: ")
+        uid = input("Podaj uid użytkownika: ")
+        manage_db.lend_book(uid, id, MAIN_DB, BOOK_DB)
+    
+    elif choice == "9":
+        print("----------ZWROT KSIĄŻKI----------")
+        id = input("Podaj id książki: ")
+        uid = input("Podaj uid użytkownika: ")
+        manage_db.return_book(uid, id, MAIN_DB, BOOK_DB)
 
-    # Exit
+    # System
     elif choice == "0":
         print("Zapisywanie bazy danych...")
         print("Opuszczanie programu...")

@@ -14,8 +14,6 @@ Struktura Menu:
 3. Wypożyczenia:
    [8] Wypożycz książkę użytkownikowi
    [9] Zwróć książkę
-   [10] Wyświetl listę wypożyczeń
-   [11] Sprawdź zaległości
 
-4. Zakończ:
+4. System:
    [0] Wyjdź z programu
