@@ -7,7 +7,7 @@ def add_user(name, surname, email, db_path):
         data = json.load(file)
 
     new_user = {
-        "uid": len(data) + 1,
+        "uid": str(len(data) + 1),
         "name": name,
         "surname": surname,
         "email": email,
