@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+h3 { color: #16a085; }
+h4 { color: #27ae60; text-align: right; }
+h5 { color: #2980b9; text-align: center; }
+h6 { color: #8e44ad; text-align: justify; }
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+legend {
+    color: #3498db;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#podstrona {
+    color: red;
+}
